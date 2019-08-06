@@ -1,0 +1,22 @@
+{
+  "name": "node.js-website",
+  "version": "1.0.0",
+  "description": "we're learning how to build a website with nodeJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andybaaall/node.js-website.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "andy ball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andybaaall/node.js-website/issues"
+  },
+  "homepage": "https://github.com/andybaaall/node.js-website#readme"
+}
