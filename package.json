@@ -4,7 +4,8 @@
   "description": "we're learning how to build a website with nodeJS",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/andybaaall/node.js-website/issues"
   },
-  "homepage": "https://github.com/andybaaall/node.js-website#readme"
+  "homepage": "https://github.com/andybaaall/node.js-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }

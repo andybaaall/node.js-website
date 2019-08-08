@@ -38,17 +38,17 @@ http.createServer(function(req, res){
 
     fs.readFile(jpgPath, function (err, data){
       if (err) throw err;
-      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.end(data);
     })
   }
 
-  else if (req.url.match(/.jpg/)){
+  else if (req.url.match(/.png/)){
     const jpgPath = path.join(__dirname, 'public', req.url);
 
     fs.readFile(jpgPath, function (err, data){
       if (err) throw err;
-      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.writeHead(200, {'Content-Type': 'image/PNG'});
       res.end(data);
     })
   }
