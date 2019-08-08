@@ -24,11 +24,33 @@ http.createServer(function(req, res){
     })
   }
 
-  else if (req.url === `/js/main.js`){
-    fs.readFile('public/js/main.js', function (err, data){
+  else if (req.url.match(/.js/)){
+    const jsPath = path.join(__dirname, 'public', req.url);
+
+    fs.readFile(jsPath, function (err, data){
       if (err) throw err;
       res.end(data);
     });
+  }
+
+  else if (req.url.match(/.jpg/)){
+    const jpgPath = path.join(__dirname, 'public', req.url);
+
+    fs.readFile(jpgPath, function (err, data){
+      if (err) throw err;
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.end(data);
+    })
+  }
+
+  else if (req.url.match(/.jpg/)){
+    const jpgPath = path.join(__dirname, 'public', req.url);
+
+    fs.readFile(jpgPath, function (err, data){
+      if (err) throw err;
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.end(data);
+    })
   }
 
   else {
